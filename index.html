@@ -92,7 +92,22 @@ background_image: /images/bg.jpg
 							<article id="audio">
 								<h2 class="major">Audio</h2>
 								<span class="image main"><img src="/images/pic01.jpg" alt="" /></span>
-								<p>Text</p>
+							   <h2>Latest release</h2>
+                  {% for audio in site.audios %}
+                 
+                  {{ audio.playerembed_html | where: "latest_release", "true" }}
+
+                  {% endfor %}
+                  <p><h2>Albums</h2>
+                  <iframe src="https://open.spotify.com/embed/album/56CVbAdg0El12tBdn2dTr0" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed/album/2u9Hi6kNhvVDQ3wJaHjHMQ" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed/album/4vpWAQ6oUrX16jyyirbH0b" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </p>
+                  <p><h2>Appears on</h2>
+                  <iframe src="https://open.spotify.com/embed/track/3zrqh9h2eWNi7Durux44Ht" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed/track/1zOYxfHAJE9a6oj4nehUwc" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  <iframe src="https://open.spotify.com/embed/track/1ZmyhaQPjAtIMKysYq56A2" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </p>
 							</article>
 
 						<!-- Video -->
