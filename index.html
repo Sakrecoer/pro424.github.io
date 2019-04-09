@@ -1,8 +1,7 @@
 ---
-title:
+title: Pro
 description:
-background_image:
-
+background_image: /images/bg.jpg
 ---
 
 <!DOCTYPE HTML>
@@ -157,13 +156,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; 2019 PRO424. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; {{ site.time | date: '%Y' }} PRO424. |  <a href="/readme.md">webCreds</a>.</p>
 					</footer>
 
 			</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
+			<div id="bg" style="background-image: url('{{ page.background_image }}')"></div>
 
 		<!-- Scripts -->
 			<script src="/assets/js/jquery.min.js"></script>
