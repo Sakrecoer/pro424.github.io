@@ -1,0 +1,82 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Pro424"
+email: 
+#phone: '+467777777'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://pro242.com" # the base hostname & protocol for your site, e.g. http://example.com
+instagram_username: 
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: >- # this means to ignore newlines until "baseurl:"
+  ''
+author:
+  name: Pro424
+  email: 
+  twitter: # twitter username without the @ symbol
+social:
+  name: Pro242
+  links:
+    - https://www.instagram.com/
+    - http://www.twitter.com/
+    - https://www.facebook.com/    
+lang: sv_SE
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Plugin settings:
+
+# Site Variables:
+
+# collection
+collections:
+  audios:
+    output: "true"
+    permalink: "/:name/"
+  lives:
+    output: "true"
+    _hide_content: "true"
+  videos: 
+    output: "true"
+# defaults
+timezone: Europe/Stockholm
+permalink: /:categories/:title/
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      _options:
+        image:
+          uploads_dir: "images"
+          width: "1280"
+          height: "720"
+          mime_type: "image/jpeg"
+          resize_style: "contain"
+        content:
+          width: "1280"
+          height: "720"
+          uploads_dir: "images"
+          mime_type: "image/jpeg"
+          resize_style: "contain"
+sass:
+    sass_dir: /assets/sass/
