@@ -20,3 +20,6 @@ _data/.~lock.*.csv#
 .jekyll-metadata
 # no heavy files in here
 *.mp3
+*.mp4
+*.wav
+*.aif
