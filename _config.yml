@@ -22,7 +22,7 @@ instagram_username:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- # this means to ignore newlines until "author"
   ''
 author:
   name: Pro424
