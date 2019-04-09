@@ -7,6 +7,13 @@
 @import 'libs/vendor';
 @import 'libs/breakpoints';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600');
+@font-face {
+	font-family: 'SlimExtremeLight';
+	font-style: light;
+	font-weight: 400;
+	src: url('../fonts/Slim-Extreme-light.woff2') format('woff2'), url('../fonts/Slim-Extreme-light.woff') format('woff'), url('../fonts/Slim-Extreme-light.ttf') format('truetype');
+	}
+h1 { font-family: 'SlimExtremeLight' !important; }
 
 /*
 	Dimension by HTML5 UP
