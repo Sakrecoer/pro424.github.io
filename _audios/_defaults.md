@@ -5,6 +5,6 @@ duration:
 audio_link:
 playerembed: ''
 category:
-latest_release: "true"
+latest_release: true
 ---
 
