@@ -95,7 +95,7 @@ background_image: /images/bg.jpg
 							   <h2>Latest release</h2>
                   {% for audio in site.audios %}
                  
-                  {{ audio.playerembed_html | where: "latest_release", "true" }}
+                  {{ audio.playerembed | where: "latest_release", "true" }}
 
                   {% endfor %}
                   <p><h2>Albums</h2>
